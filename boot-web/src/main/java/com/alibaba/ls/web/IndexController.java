@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/index")
 public class IndexController {
 	
+	
 	@RequestMapping("/")
 	public String index(ModelMap modelMap) {
 		modelMap.addAttribute("name", "ruzun");

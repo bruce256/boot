@@ -2,6 +2,7 @@ package com.alibaba.ls.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @auther 儒尊
@@ -14,3 +15,5 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 }
+
+
