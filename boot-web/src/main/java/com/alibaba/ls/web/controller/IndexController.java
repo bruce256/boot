@@ -1,4 +1,4 @@
-package com.alibaba.ls.web;
+package com.alibaba.ls.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

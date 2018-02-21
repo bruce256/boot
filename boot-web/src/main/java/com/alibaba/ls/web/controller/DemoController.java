@@ -1,4 +1,4 @@
-package com.alibaba.ls.web;
+package com.alibaba.ls.web.controller;
 
 import com.alibaba.ls.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +17,7 @@ public class DemoController {
 	
 	@RequestMapping("/home")
 	public String home() {
+		System.out.println(this);
 		demoService.hello();
 		return "Hello 吕胜 !";
 	}
