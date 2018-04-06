@@ -1,0 +1,4 @@
+${application.version}
+${spring-boot.version}
+${application.title}
+儒尊
