@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CliController {
 	
-	@RequestMapping("/cli")
+	@RequestMapping("/client")
 	public String home() {
 		return "Hello World!";
 	}
