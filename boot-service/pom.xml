@@ -19,6 +19,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.alibaba.ls</groupId>
+            <artifactId>boot-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
         </dependency>
@@ -44,6 +50,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        
+
     </dependencies>
+
 </project>

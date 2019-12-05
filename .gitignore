@@ -26,3 +26,5 @@ hs_err_pid*
 .idea
 rebel.xml
 .rebel.xml.bak
+boot.iml
+boot-service/boot-service.iml
