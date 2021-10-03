@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.alibaba.ls.dao.mapper.UserMapper">
-    <select id="select" resultType="UserDO">
+    <select id="select" resultType="com.alibaba.ls.domain.UserDO">
         SELECT *
         FROM USER
     </select>

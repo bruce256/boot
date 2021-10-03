@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Profile;
  * @date 2018/2/2
  **/
 @Configuration
-@ComponentScan(basePackages = {"com.alibaba.ls.service"})
+@ComponentScan(basePackages = {"com.alibaba.ls"})
 public class MyConfiguration {
 	
 }

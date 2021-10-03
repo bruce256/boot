@@ -1,6 +1,8 @@
 package com.alibaba.ls;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.JedisPool;
 
 /**
  * @author LvSheng
@@ -8,4 +10,11 @@ import org.springframework.stereotype.Service;
  **/
 @Service
 public class RedisManager {
+
+    /*@Autowired
+    private JedisPool redisPool;
+
+    public String get(String key) {
+        return redisPool.getResource().get(key);
+    }*/
 }
