@@ -21,6 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud-alibaba.version>2.0.4.RELEASE</spring-cloud-alibaba.version>
+        <nacos-version>0.2.9</nacos-version>
     </properties>
 
 
@@ -44,20 +45,14 @@
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-config-spring-boot-starter</artifactId>
-                <version>0.2.1</version>
+                <version>${nacos-version}</version>
             </dependency>
 
             <!--引入nacos服务注册包-->
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-discovery-spring-boot-starter</artifactId>
-                <version>0.2.1</version>
-            </dependency>
-            <!--引入nacos-client包  个别需要加  不加会报nacos  api的错-->
-            <dependency>
-                <groupId>com.alibaba.nacos</groupId>
-                <artifactId>nacos-client</artifactId>
-                <version>0.6.2</version>
+                <version>${nacos-version}</version>
             </dependency>
 
             <dependency>

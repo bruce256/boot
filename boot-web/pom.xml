@@ -31,12 +31,6 @@
             <artifactId>nacos-discovery-spring-boot-starter</artifactId>
         </dependency>
 
-        <!--引入nacos-client包  个别需要加  不加会报nacos  api的错-->
-        <dependency>
-            <groupId>com.alibaba.nacos</groupId>
-            <artifactId>nacos-client</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

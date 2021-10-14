@@ -1,6 +1,8 @@
 package com.alibaba.ls.web.controller;
 
+import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.config.annotation.NacosValue;
+import com.alibaba.nacos.api.naming.NamingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,9 @@ public class RedisController {
     @NacosValue(value = "${owner}", autoRefreshed = true)
     private String owner;
 
+    @NacosInjected
+    private NamingService namingService;
+
     @GetMapping("/get")
     public String get(@RequestParam(value = "key") String key) {
         return stringRedisTemplate.boundValueOps(key).get();
@@ -30,5 +35,10 @@ public class RedisController {
     @GetMapping("/owner")
     public String getOwner() {
         return owner;
+    }
+
+    @GetMapping("/name")
+    public String name() {
+        return namingService.getServerStatus();
     }
 }
