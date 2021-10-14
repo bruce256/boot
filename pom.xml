@@ -40,6 +40,26 @@
                 <version>2.7.12</version>
             </dependency>
 
+            <!--引入nacos配置包  读取nacos上配置文件需要这个包-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>0.2.1</version>
+            </dependency>
+
+            <!--引入nacos服务注册包-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+                <version>0.2.1</version>
+            </dependency>
+            <!--引入nacos-client包  个别需要加  不加会报nacos  api的错-->
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>0.6.2</version>
+            </dependency>
+
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
