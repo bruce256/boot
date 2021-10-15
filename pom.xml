@@ -63,11 +63,11 @@
             </dependency>
 
             <!-- Dubbo dependency -->
-            <dependency>
+            <!--<dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo-version}</version>
-            </dependency>
+            </dependency>-->
 
             <!-- 使用Spring装配方式时可选: -->
             <dependency>

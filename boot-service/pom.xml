@@ -41,10 +41,10 @@
             <artifactId>spring-context-support</artifactId>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
-        </dependency>
+        </dependency>-->
 
 
         <dependency>
