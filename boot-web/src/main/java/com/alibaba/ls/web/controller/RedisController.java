@@ -24,6 +24,9 @@ public class RedisController {
     @NacosValue(value = "${owner}", autoRefreshed = true)
     private String owner;
 
+    @NacosValue(value = "${number}", autoRefreshed = true)
+    private Integer number;
+
     @NacosInjected
     private NamingService namingService;
 
@@ -35,6 +38,11 @@ public class RedisController {
     @GetMapping("/owner")
     public String getOwner() {
         return owner;
+    }
+
+    @GetMapping("/number")
+    public Integer getNumber() {
+        return number;
     }
 
     @GetMapping("/name")
