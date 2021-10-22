@@ -18,8 +18,8 @@ public class ApplicationTest {
 	@Autowired
 	private DemoService demoService;
 	
-	@Test
-	public void demo() {
-		demoService.hello();
-	}
+//	@Test
+//	public void demo() {
+//		demoService.hello();
+//	}
 }
