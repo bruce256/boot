@@ -158,7 +158,7 @@
                 </configuration>
             </plugin>
 
-            <!-- 打出一个可运行的fat jar -->
+            <!-- 打出一个可运行的fat jar , 如果只想把web层打出一个普通的jar，则需要注释掉这个插件-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

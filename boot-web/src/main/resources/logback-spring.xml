@@ -8,12 +8,24 @@
         </encoder>
     </appender>
 
-    <logger name="chapters.configuration" level="INFO"/>
+    <logger name="druid.sql.Statement" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="druid.sql.ResultSet" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <logger name="com.alibaba.druid" level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </logger>
 
     <!-- Strictly speaking, the level attribute is not necessary since -->
     <!-- the level of the root level is set to DEBUG by default.       -->
-    <root level="DEBUG">
-        <appender-ref ref="STDOUT" />
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
     </root>
 
 </configuration>
