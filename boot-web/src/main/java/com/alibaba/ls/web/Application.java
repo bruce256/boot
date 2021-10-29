@@ -7,7 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @auther 儒尊
+ * @author 儒尊
  * @date 2018/1/27
  **/
 //@EnableGlobalMethodSecurity
