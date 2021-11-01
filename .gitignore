@@ -27,3 +27,5 @@ hs_err_pid*
 target/
 my.log.*
 classes
+arthas-output
+dependency.txt

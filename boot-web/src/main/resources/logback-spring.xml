@@ -12,27 +12,37 @@
         <file>bean_time_cost.log</file>
         <append>true</append>
         <encoder>
-            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
         　　　　　　
     </appender>
 
-    <logger name="BeanTimeCost">
+    <appender name="SQL" class="ch.qos.logback.core.FileAppender">
+        <file>sql.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        　　　　　　
+    </appender>
+
+    <!--additivity = false 则不会输出到顶层logger里面 -->
+    <logger name="BeanTimeCost" additivity="false">
         <appender-ref ref="BeanTimeCostAppender"/>
     </logger>
 
     <logger name="druid.sql.Statement" additivity="false">
         <level value="DEBUG"/>
-        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="SQL"/>
     </logger>
 
     <logger name="druid.sql.ResultSet" additivity="false">
         <level value="DEBUG"/>
-        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="SQL"/>
     </logger>
 
     <logger name="com.alibaba.druid" level="DEBUG">
-        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="SQL"/>
     </logger>
 
     <!-- Strictly speaking, the level attribute is not necessary since -->

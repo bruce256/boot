@@ -59,15 +59,28 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
     <build>
+        <plugins>
+            <!-- 打出一个可运行的fat jar , 如果只想把web层打出一个普通的jar，则需要注释掉这个插件-->
+            <!-- 该插件只能放在web模块里，不能父模块中或者其他不出可执行包中，放在父pom中，会导致所有的模块被打成可执行jar，导致编译问题 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.5.5</version>
+                <configuration>
+                    <fork>true</fork>
+                    <mainClass>com.alibaba.ls.web.Application</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
         <finalName>boot-web</finalName>
     </build>
 </project>
