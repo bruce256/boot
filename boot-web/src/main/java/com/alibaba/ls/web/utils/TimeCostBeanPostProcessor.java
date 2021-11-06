@@ -16,7 +16,7 @@ import java.util.Map;
  * @date 2021/10/29
  **/
 @Slf4j
-@Component
+//@Component
 public class TimeCostBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
 
     Logger            logger  = LoggerFactory.getLogger("BeanTimeCost");
