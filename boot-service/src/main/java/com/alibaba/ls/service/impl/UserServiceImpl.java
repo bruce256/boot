@@ -3,6 +3,8 @@ package com.alibaba.ls.service.impl;
 import com.alibaba.ls.dao.mapper.UserMapper;
 import com.alibaba.ls.domain.UserDO;
 import com.alibaba.ls.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -18,13 +20,15 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService, ApplicationContextAware {
 
-    private ApplicationContext applicationContext;
+    private static Logger             logger = LoggerFactory.getLogger(UserServiceImpl.class);
+    private        ApplicationContext applicationContext;
 
     @Autowired
     private UserMapper userMapper;
 
     @Override
     public List<UserDO> select() {
+        logger.info("select");
         return userMapper.select();
     }
 
