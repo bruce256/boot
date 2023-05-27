@@ -1,0 +1,20 @@
+package com.alibaba.ls.web;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+/**
+ * @author LvSheng
+ * @date 2022/9/17
+ **/
+
+@Slf4j
+@RestControllerAdvice(basePackages = "com.alibaba.ls.web")
+public class GlobalExceptionHandler {
+
+    @ExceptionHandler(value = Exception.class)
+    public void handler(Exception e) {
+        log.error(e.getMessage(), e);
+    }
+}

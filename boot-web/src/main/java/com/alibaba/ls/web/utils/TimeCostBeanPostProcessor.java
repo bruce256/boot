@@ -17,7 +17,10 @@ import java.util.Map;
  **/
 @Slf4j
 //@Component
-public class TimeCostBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
+public class
+
+
+TimeCostBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
 
     Logger            logger  = LoggerFactory.getLogger("BeanTimeCost");
     Map<String, Long> costMap = Maps.newConcurrentMap();

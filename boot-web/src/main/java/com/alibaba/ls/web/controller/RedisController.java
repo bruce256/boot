@@ -21,13 +21,13 @@ public class RedisController {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-    @NacosValue(value = "${owner}", autoRefreshed = true)
+//    @NacosValue(value = "${owner}", autoRefreshed = true)
     private String owner;
 
-    @NacosValue(value = "${number}", autoRefreshed = true)
+//    @NacosValue(value = "${number}", autoRefreshed = true)
     private Integer number;
 
-    @NacosInjected
+//    @NacosInjected
     private NamingService namingService;
 
     @GetMapping("/get")

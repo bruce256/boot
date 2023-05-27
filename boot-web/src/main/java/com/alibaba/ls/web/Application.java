@@ -12,11 +12,11 @@ import org.springframework.cache.annotation.EnableCaching;
  * @date 2018/1/27
  **/
 //@EnableGlobalMethodSecurity
-@EnableDubbo(scanBasePackages = "com.alibaba.ls.service")
+//@EnableDubbo(scanBasePackages = "com.alibaba.ls.service")
 @SpringBootApplication
 @MapperScan("com.alibaba.ls.dao.mapper")
-@NacosPropertySource(dataId = "boot", autoRefreshed = true)
-@EnableCaching
+//@NacosPropertySource(dataId = "boot", autoRefreshed = true)
+//@EnableCaching
 public class Application {
 
     public static void main(String[] args) throws Exception {
