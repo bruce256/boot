@@ -1,8 +1,6 @@
 package com.alibaba.ls;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import redis.clients.jedis.JedisPool;
 
 /**
  * @author LvSheng

@@ -1,7 +1,6 @@
 package com.alibaba.ls.web.controller;
 
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.ls.dao.mapper.UserMapper;
 import com.alibaba.ls.domain.UserDO;
 import com.alibaba.ls.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

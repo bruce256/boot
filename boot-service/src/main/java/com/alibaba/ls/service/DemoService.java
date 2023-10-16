@@ -3,7 +3,6 @@ package com.alibaba.ls.service;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 /**
  * @author 儒尊

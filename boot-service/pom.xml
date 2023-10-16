@@ -29,10 +29,10 @@
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-registry-nacos</artifactId>
-        </dependency>
+        </dependency>-->
 
 
         <!-- 使用Spring装配方式时可选: -->

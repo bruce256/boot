@@ -1,8 +1,5 @@
 package com.alibaba.ls.web.controller;
 
-import com.alibaba.nacos.api.annotation.NacosInjected;
-import com.alibaba.nacos.api.config.annotation.NacosValue;
-import com.alibaba.nacos.api.naming.NamingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +25,7 @@ public class RedisController {
     private Integer number;
 
 //    @NacosInjected
-    private NamingService namingService;
+//    private NamingService namingService;
 
     @GetMapping("/get")
     public String get(@RequestParam(value = "key") String key) {
@@ -45,8 +42,8 @@ public class RedisController {
         return number;
     }
 
-    @GetMapping("/name")
+/*    @GetMapping("/name")
     public String name() {
         return namingService.getServerStatus();
-    }
+    }*/
 }

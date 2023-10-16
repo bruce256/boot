@@ -1,13 +1,11 @@
 package com.alibaba.ls.web.utils;
 
 import com.google.common.collect.Maps;
-import com.mysql.cj.log.LogFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
-import org.springframework.stereotype.Component;
 
 import java.util.Map;
 

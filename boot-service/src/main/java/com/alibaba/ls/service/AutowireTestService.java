@@ -1,6 +1,5 @@
 package com.alibaba.ls.service;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

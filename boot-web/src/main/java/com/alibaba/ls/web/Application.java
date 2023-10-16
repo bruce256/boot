@@ -1,14 +1,10 @@
 package com.alibaba.ls.web;
 
 import com.alibaba.ls.service.SayHello;
-import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
-import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.retry.annotation.EnableRetry;
 
 /**
  * @author 儒尊
@@ -20,7 +16,6 @@ import org.springframework.retry.annotation.EnableRetry;
 @MapperScan("com.alibaba.ls.dao.mapper")
 //@NacosPropertySource(dataId = "boot", autoRefreshed = true)
 //@EnableCaching
-@EnableRetry
 public class Application {
 
     @Autowired
