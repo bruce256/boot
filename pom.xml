@@ -21,7 +21,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-cloud-alibaba.version>2.0.4.RELEASE</spring-cloud-alibaba.version>
-        <nacos-version>0.2.9</nacos-version>
+        <nacos-version>0.2.12</nacos-version>
         <dubbo-version>2.7.12</dubbo-version>
         <druid-version>1.2.8</druid-version>
     </properties>
@@ -29,13 +29,13 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--<dependency>
+            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>Brixton.SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>-->
+            </dependency>
 
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
@@ -60,18 +60,18 @@
             </dependency>-->
 
             <!--引入nacos配置包  读取nacos上配置文件需要这个包-->
-<!--            <dependency>
+            <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-config-spring-boot-starter</artifactId>
                 <version>${nacos-version}</version>
             </dependency>
 
-            &lt;!&ndash;引入nacos服务注册包&ndash;&gt;
+            <!--引入nacos服务注册包-->
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-discovery-spring-boot-starter</artifactId>
                 <version>${nacos-version}</version>
-            </dependency>-->
+            </dependency>
 
             <!-- Dubbo dependency -->
             <!--<dependency>
