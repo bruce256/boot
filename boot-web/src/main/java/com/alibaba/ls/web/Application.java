@@ -15,7 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@EnableDubbo(scanBasePackages = "com.alibaba.ls.service")
 @SpringBootApplication
 @MapperScan("com.alibaba.ls.dao.mapper")
-@NacosPropertySource(dataId = "boot", autoRefreshed = true)
+@NacosPropertySource(dataId = "camel", autoRefreshed = true)
 //@EnableCaching
 public class Application {
 

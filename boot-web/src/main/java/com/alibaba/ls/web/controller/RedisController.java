@@ -1,5 +1,6 @@
 package com.alibaba.ls.web.controller;
 
+import com.alibaba.nacos.api.config.annotation.NacosValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +19,10 @@ public class RedisController {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-//    @NacosValue(value = "${owner}", autoRefreshed = true)
+    @NacosValue(value = "${owner}", autoRefreshed = true)
     private String owner;
 
-//    @NacosValue(value = "${number}", autoRefreshed = true)
+    @NacosValue(value = "${number}", autoRefreshed = true)
     private Integer number;
 
 //    @NacosInjected

@@ -31,6 +31,11 @@
         <appender-ref ref="BeanTimeCostAppender"/>
     </logger>
 
+    <logger name="com.alibaba.nacos" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
     <logger name="druid.sql.Statement" additivity="false">
         <level value="DEBUG"/>
         <appender-ref ref="SQL"/>
