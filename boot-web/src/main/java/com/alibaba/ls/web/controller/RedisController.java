@@ -19,10 +19,10 @@ public class RedisController {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-    @NacosValue(value = "${owner}", autoRefreshed = true)
+    @NacosValue(value = "${owner:lvsheng}", autoRefreshed = true)
     private String owner;
 
-    @NacosValue(value = "${number}", autoRefreshed = true)
+    @NacosValue(value = "${number:1}", autoRefreshed = true)
     private Integer number;
 
 //    @NacosInjected

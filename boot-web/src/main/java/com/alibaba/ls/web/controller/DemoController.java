@@ -2,6 +2,7 @@ package com.alibaba.ls.web.controller;
 
 import com.alibaba.ls.service.DemoService;
 import com.alibaba.ls.service.SayHello;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @auther 儒尊
  * @date 2018/1/27
  **/
+@Slf4j
 @RestController
 public class DemoController {
 
@@ -24,7 +26,7 @@ public class DemoController {
 
     @RequestMapping("/home")
     public String home() {
-        System.out.println(applicationContext.getEnvironment());
+        log.info(applicationContext.getEnvironment().toString());
         System.out.println(this);
         demoService.hello();
         sayHello.caller();
