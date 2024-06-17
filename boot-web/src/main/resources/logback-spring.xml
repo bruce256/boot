@@ -17,6 +17,23 @@
         　　　　　　
     </appender>
 
+    <appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>boot/%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>10</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="async" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>512</queueSize>
+        <!-- 指定异步写入名称为 logfile 的 appender，这里最多只能添加一个 appender-ref -->
+        <appender-ref ref="logfile" />
+    </appender>
+
     <appender name="SQL" class="ch.qos.logback.core.FileAppender">
         <file>sql.log</file>
         <append>true</append>
@@ -54,6 +71,7 @@
     <!-- the level of the root level is set to DEBUG by default.       -->
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
+        <appender-ref ref="async"/>
     </root>
 
 </configuration>
