@@ -1,7 +1,6 @@
 package com.alibaba.ls.web;
 
 import com.alibaba.ls.service.SayHello;
-import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
