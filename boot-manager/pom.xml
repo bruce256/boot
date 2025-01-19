@@ -52,17 +52,13 @@
 
         <dependency>
             <groupId>io.prometheus</groupId>
-            <artifactId>prometheus-metrics-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.prometheus</groupId>
-            <artifactId>prometheus-metrics-exporter-pushgateway</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.prometheus</groupId>
             <artifactId>simpleclient_pushgateway</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.bruce.jr</groupId>
+            <artifactId>prometheus-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
     </dependencies>
 
