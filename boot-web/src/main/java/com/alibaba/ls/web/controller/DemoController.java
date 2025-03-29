@@ -38,7 +38,7 @@ public class DemoController {
     
     @RequestMapping("/sleep")
     public String sleep() throws InterruptedException {
-        Thread.sleep(60 * 60 * 1000);
+        Thread.sleep(10 * 1000);
         return "Hello 吕胜 !";
     }
 }
