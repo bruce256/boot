@@ -29,6 +29,7 @@ import javax.websocket.server.ServerEndpoint;
 
 // 使用 @ServerEndpoint 注解表示此类是一个 WebSocket 端点
 // 通过 value 注解，指定 websocket 的路径
+// 在 Spring Boot 中使用 @ServerEndpoint注解的类，每建立一个新的 WebSocket 连接时，服务端都会创建一个新的实例。这是由 JSR 356（Java API for WebSocket）规范 定义的行为
 @ServerEndpoint(value = "/channel/echo")
 public class EchoChannel {
 	
@@ -59,6 +60,7 @@ public class EchoChannel {
 		// 保存 session 到对象
 		this.session = session;
 		LOGGER.info("[websocket] 新的连接：id={}", this.session.getId());
+		LOGGER.info("this: {}" + this.toString());
 	}
 	
 	// 连接关闭
