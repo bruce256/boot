@@ -20,18 +20,24 @@
         </dependency>
 
         <!--引入nacos配置包  读取nacos上配置文件需要这个包-->
- <!--       <dependency>
+        <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>nacos-config-spring-boot-starter</artifactId>
         </dependency>
 
-        &lt;!&ndash;引入nacos服务注册包&ndash;&gt;
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
+        <!--
+               &lt;!&ndash;引入nacos服务注册包&ndash;&gt;
+               <dependency>
+                   <groupId>com.alibaba.boot</groupId>
+                   <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+               </dependency>
 
-  -->      <dependency>
+         -->
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -80,7 +86,6 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.76</version>
         </dependency>
-
 
 
         <!--<dependency>

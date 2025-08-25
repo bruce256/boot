@@ -8,6 +8,7 @@ import com.alibaba.nacos.api.config.annotation.NacosValue;
 import com.alibaba.nacos.api.naming.NamingService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,11 +26,14 @@ public class RedisController {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
-/*    @NacosValue(value = "${owner:lvsheng}", autoRefreshed = true)
+    @NacosValue(value = "${owner:lvsheng}", autoRefreshed = true)
     private String owner;
 
     @NacosValue(value = "${number:1}", autoRefreshed = true)
-    private Integer number;*/
+    private Integer number;
+
+    @Value(value = "${name:lvsheng}")
+    private String name;
 
     //@NacosInjected
     //private NamingService namingService;

@@ -70,6 +70,14 @@
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-web-servlet</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-cluster-server-default</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-cluster-client-default</artifactId>
+        </dependency>
 
 
     </dependencies>
