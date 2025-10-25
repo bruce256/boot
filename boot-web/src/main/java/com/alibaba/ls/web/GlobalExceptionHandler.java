@@ -1,5 +1,7 @@
 package com.alibaba.ls.web;
 
+
+import io.sentry.Sentry;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -12,9 +14,10 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @Slf4j
 @RestControllerAdvice(basePackages = "com.alibaba.ls.web")
 public class GlobalExceptionHandler {
-
-    @ExceptionHandler(value = Exception.class)
-    public void handler(Exception e) {
-        log.error(e.getMessage(), e);
-    }
+	
+	@ExceptionHandler(value = Exception.class)
+	public void handler(Exception e) {
+//		Sentry.captureException(e);
+		log.error(e.getMessage(), e);
+	}
 }
