@@ -3,6 +3,7 @@ package com.alibaba.ls.web.controller;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.ls.domain.UserDO;
 import com.alibaba.ls.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ import java.util.List;
 /*************************************************
  * 测试用cli运行： spring run CliController.java
  *************************************************/
+@Slf4j
 @RestController
 public class CliController {
 
@@ -26,6 +28,7 @@ public class CliController {
 
     @RequestMapping("/client")
     public String home() {
+		log.info("client");
         List<UserDO> users = userService.select();
         return JSONArray.toJSONString(users);
     }

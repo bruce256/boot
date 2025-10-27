@@ -10,5 +10,5 @@ import lombok.Data;
 public class UserDO {
 	
 	private Integer id;
-	private String  name;
+	private String  userName;
 }
