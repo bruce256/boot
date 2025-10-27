@@ -6,6 +6,6 @@
 <mapper namespace="com.alibaba.ls.dao.mapper.UserMapper">
     <select id="select" resultType="com.alibaba.ls.domain.UserDO">
         SELECT *
-        FROM USER
+        FROM identity_user
     </select>
 </mapper>
