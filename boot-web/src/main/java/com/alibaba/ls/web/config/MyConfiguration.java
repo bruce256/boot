@@ -1,6 +1,4 @@
-package com.alibaba.ls.web;
-
-import java.util.logging.Filter;
+package com.alibaba.ls.web.config;
 
 import com.alibaba.csp.sentinel.adapter.servlet.CommonFilter;
 

@@ -1,7 +1,6 @@
-package com.alibaba.ls.web;
+package com.alibaba.ls.web.config;
 
 
-import io.sentry.Sentry;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

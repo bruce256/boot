@@ -1,4 +1,4 @@
-package com.alibaba.ls.web;
+package com.alibaba.ls.web.config;
 
 import org.springframework.stereotype.Component;
 import io.sentry.protocol.User;

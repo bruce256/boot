@@ -1,4 +1,4 @@
-package com.alibaba.ls.web;
+package com.alibaba.ls.web.config;
 
 import com.alibaba.ls.web.websocket.EchoChannel;
 import org.springframework.context.annotation.Bean;
