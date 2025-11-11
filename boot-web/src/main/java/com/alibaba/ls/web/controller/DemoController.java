@@ -5,6 +5,7 @@ import com.alibaba.ls.service.SayHello;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -47,4 +48,11 @@ public class DemoController {
 		log.info("request {}  ended", idx);
 		return "Hello 吕胜 !";
 	}
+	
+	@RequestMapping("/async")
+	public String async() throws InterruptedException {
+		demoService.dosomething();
+		return "Hello 吕胜 !";
+	}
+	
 }

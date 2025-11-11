@@ -9,6 +9,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  * @author 儒尊
@@ -16,18 +17,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  **/
 //@EnableGlobalMethodSecurity
 //@EnableDubbo(scanBasePackages = "com.alibaba.ls.service")
+@EnableAsync
 @SpringBootApplication
 @MapperScan("com.alibaba.ls.dao.mapper")
 @NacosPropertySource(dataId = "camel", autoRefreshed = true)
 //@EnableCaching
 public class Application {
-
-    @Autowired
-    public SayHello sayHello;
-    
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(Application.class, args);
-    }
+	
+	@Autowired
+	public SayHello sayHello;
+	
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(Application.class, args);
+	}
 }
 
 
